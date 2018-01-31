@@ -8,6 +8,7 @@ var router = express.Router();
 var User = require("../models/user");
 var Book = require("../models/film");
 var debug = require('debug')('myapi:server');
+var Film = require('../models/film');
 
 router.post('/signup', function(req, res) {
     if (!req.body.email || !req.body.password) {
